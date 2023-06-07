@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+    <title>CRUD</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+    <link rel="stylesheet" href="assets/css/templatemo-training-studio.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+    
+    <body>
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-5 mb-5">
+                <strong>CRUD U-TRAING</strong>
+            </h1>
+        </div>
+        <div class="main row justify-content-center">
+            <form action="" id="student-form" class="row justify-content-center mb-4" autocomplete="off">
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="Digite seu nome">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="lastname">Sobrenome Nome</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Digite seu sobrenome">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="cpf">CPF</label>
+                    <input type="number" class="form-control" id="cpf" placeholder="Digite seu cpf">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <label for="senha">Senha</label>
+                    <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+                </div>
+                <div class="col-10 col-md-8 mb-3">
+                    <input class="btn btn-success add-btn" type="submit" value="Enviar">
+                </div>
+            </form>
+            <div class="col-12 col-md-10 mt-5">
+                <table class="table table-striped table-dark">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>CPF</th>
+                            <th>Senha</th>
+                            <th>#</th>
+                        </tr>
+                    </thead>
+                    <tbody id="student-list">
+                        <tr>
+                            <!-- <td>Lucas</td>
+                            <td>Maia</td>
+                            <td>44444</td>
+                            <td>321321</td>
+                            <td>
+                                <a href="#" class="btn btn-warning btn-sm edit">Editar</a>
+                                <a href="#" class="btn btn-danger btn-sm delete">Deletar</a>
+                            </td> -->
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/accordions.js"></script>
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
+    <script>
+        $(function(){
+            $(document).on('click', '.btn-primary', function(){
+                $("#exampleModal").modal();
+            });
+        });
+    </script>
+
+<script src="./assets/js/script.js"></script>
+  </body>
+</html>
